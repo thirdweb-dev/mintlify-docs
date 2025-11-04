@@ -70,16 +70,8 @@
       },
       {
         "tab": "API Reference",
-        "groups": [
-          {
-            "group": "api-reference",
-            "openapi": {
-              "source": "/api-reference/openapi.json",
-              "directory": "api-reference"
-            }
-          }
-      ]
-    }
+        "openapi": "https://api.thirdweb.com/openapi.json"
+      }
     ],
     "global": {
       "anchors": [
