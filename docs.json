@@ -47,21 +47,14 @@
           }
         ]
       },
-       {
+      {
         "tab": "Tokens",
         "groups": [
           {
-            "group": "Hello World",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
             "group": "Resources",
             "pages": [
-              "faq"
+              "/tokens/resources/security",
+              "/tokens/resources/faq"
             ]
           }
         ]
@@ -70,11 +63,9 @@
         "tab": "Bridge",
         "groups": [
           {
-            "group": "Hello World",
+            "group": "Resources",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "/bridge/resources/faq"
             ]
           }
         ]
@@ -121,6 +112,10 @@
   },
   "navbar": {
     "links": [
+      {
+        "label": "Changelog",
+        "href": "https://blog.thirdweb.com/changelog"
+      },
       {
         "label": "Support",
         "href": "https://thirdweb.com/support"
