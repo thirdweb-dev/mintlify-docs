@@ -41,6 +41,8 @@
           {
             "group": "Resources",
             "pages": [
+              "/bridge/resources/fee-breakdown",
+              "/bridge/resources/onramp-provider",
               "/bridge/resources/faq"
             ]
           }
