@@ -20,30 +20,6 @@
               "quickstart",
               "development"
             ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
           }
         ]
       },
@@ -59,13 +35,35 @@
           }
         ]
       },
-     {
+      {
         "tab": "Bridge",
         "groups": [
           {
             "group": "Resources",
             "pages": [
               "/bridge/resources/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "x402",
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "/bridge/resources/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AI",
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "/ai/resources/faq"
             ]
           }
         ]
@@ -129,15 +127,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
