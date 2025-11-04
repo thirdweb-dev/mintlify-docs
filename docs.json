@@ -4,8 +4,8 @@
   "name": "thirdweb docs",
   "colors": {
     "primary": "#F213A4",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#F213A4",
+    "dark": "#F213A4"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -49,6 +49,25 @@
       },
        {
         "tab": "Tokens",
+        "groups": [
+          {
+            "group": "Hello World",
+            "pages": [
+              "index",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "faq"
+            ]
+          }
+        ]
+      },
+     {
+        "tab": "Bridge",
         "groups": [
           {
             "group": "Hello World",
