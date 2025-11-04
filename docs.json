@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "thirdweb docs",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#F213A4",
     "light": "#07C983",
     "dark": "#15803D"
   },
@@ -128,13 +128,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://thirdweb.com/support"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://thirdweb.com/login"
     }
   },
   "contextual": {
@@ -153,7 +153,7 @@
     "socials": {
       "x": "https://x.com/thirdweb",
       "github": "https://github.com/thirdweb-dev",
-      "linkedin": "https://linkedin.com/company/thirdweb"
+      "linkedin": "https://linkedin.com/company/thirdweb_"
     }
   }
 }
