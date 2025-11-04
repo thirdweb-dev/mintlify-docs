@@ -69,15 +69,15 @@
         ]
       },
       {
-      "tab": "API Reference",
-      "groups": [
-        {
-          "group": "API",
-          "openapi": {
-            "source": "/api-reference/openapi.json",
-            "directory": "api-reference"
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "api-reference",
+            "openapi": {
+              "source": "/api-reference/openapi.json",
+              "directory": "api-reference"
+            }
           }
-        }
       ]
     }
     ],
