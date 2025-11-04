@@ -69,9 +69,17 @@
         ]
       },
       {
-        "tab": "API reference",
-        "openapi": "https://api.thirdweb.com/openapi.json"
-      }
+      "tab": "API Reference",
+      "groups": [
+        {
+          "group": "API",
+          "openapi": {
+            "source": "/api-reference/openapi.json",
+            "directory": "api-reference"
+          }
+        }
+      ]
+    }
     ],
     "global": {
       "anchors": [
