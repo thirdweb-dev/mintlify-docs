@@ -61,6 +61,20 @@
         "tab": "AI",
         "groups": [
           {
+            "group": "Blockchain LLM",
+            "pages": [
+              "/ai/blockchain-llm/get-started",
+              "/ai/blockchain-llm/transaction-execution",
+              "/ai/blockchain-llm/streamed-response"
+            ]
+          },
+          {
+            "group": "MCP-Server",
+            "pages": [
+              "/ai/mcp-server/get-started"
+            ]
+          },
+          {
             "group": "Resources",
             "pages": [
               "/ai/resources/faq"
@@ -127,5 +141,8 @@
       "github": "https://github.com/thirdweb-dev",
       "linkedin": "https://linkedin.com/company/thirdweb_"
     }
+  },
+  "seo": {
+    "indexing": "all"
   }
 }
