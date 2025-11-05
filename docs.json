@@ -16,9 +16,7 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index"
             ]
           }
         ]
@@ -70,8 +68,8 @@
               {
                 "group": "Integrations",
                 "pages": [
-                  "/ai/blockchain-llm/open-ai-sdk",
-                  "/ai/blockchain-llm/vercel-ai-sdk"
+                  "/ai/blockchain-llm/integrations/open-ai-sdk",
+                  "/ai/blockchain-llm/integrations/vercel-ai-sdk"
                 ]
               }
             ]
@@ -84,7 +82,6 @@
           }
         ]
       }
-
     ],
     "global": {
       "anchors": [
