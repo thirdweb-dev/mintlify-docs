@@ -17,16 +17,35 @@
             "group": "User Wallets",
             "pages": [
               "/wallets/user-wallets/quickstart",
-              "/wallets/user-wallets/auth-methods",
               "/wallets/user-wallets/ui-components",
-              "/wallets/user-wallets/link-profiles"
+              {
+                "group": "Authentication",
+                "pages": [
+                  "/wallets/user-wallets/auth-methods",
+                  "/wallets/user-wallets/link-profiles",
+                  "/wallets/user-wallets/sign-in-with-ethereum",
+                  "/wallets/user-wallets/custom-auth"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "/wallets/user-wallets/customization/custom-otp-email"
+                ]
+              },
+              {
+                "group": "Adapters",
+                "pages": [
+                  "/wallets/user-wallets/adapters"
+                ]
+              }
             ]
           },
           {
             "group": "Ecosystem Wallets",
             "pages": [
               "/wallets/ecosystem-wallets/get-started",
-              "/wallets/ecosystem-wallets/wallet-connect"
+              "/wallets/ecosystem-wallets/reown"
             ]
           },
           {
