@@ -75,9 +75,16 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "/ai/resources/faq"
+            ]
           }
         ]
       }
+
     ],
     "global": {
       "anchors": [
