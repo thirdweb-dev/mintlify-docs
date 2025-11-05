@@ -127,6 +127,21 @@
             ]
           },
           {
+            "group": "MCP Server",
+            "pages": [
+              "/ai/mcp-server/quickstart",
+              {
+                "group": "Clients",
+                "pages": [
+                  "/ai/mcp-server/clients/cursor",
+                  "/ai/mcp-server/clients/windsurf",
+                  "/ai/mcp-server/clients/vs-code",
+                  "/ai/mcp-server/clients/claude"
+                ]
+              }
+            ]
+          },
+          {
             "group": "Resources",
             "pages": [
               "/ai/resources/faq"
@@ -140,7 +155,7 @@
         {
           "anchor": "Playground",
           "href": "https://playground.thirdweb.com",
-          "icon": "book-open-cover"
+          "icon": "gamepad"
         }
       ]
     }
