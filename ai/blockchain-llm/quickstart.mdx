@@ -24,58 +24,6 @@ and more.
 
 Use the API with the HTTP API directly or with any OpenAI-compatible client library.
 
-<RequestExample>
-
-```javascript filename
-fetch("https://api.thirdweb.com/ai/chat", {
-  method: "POST",
-  headers: {
-    "x-secret-key": "<your-project-secret-key>",
-  },
-  body: {
-    messages: [
-      {
-        role: "user",
-        content: "Send 0.01 ETH to vitalik.eth",
-      },
-    ],
-    context: {
-      chain_ids: [8453],
-      from: "0x1234567890123456789012345678901234567890",
-    },
-    stream: false,
-  },
-});
-```
-
-</RequestExample>
-
-<ResponseExample>
-
-```javascript filename
-{
-  "message": "I've prepared a native ETH transfer as requested. Would you like to proceed with executing this transfer?",
-  "session_id": "123",
-  "request_id": "456",
-  "actions": [
-    {
-      "type": "sign_transaction",
-      "data": {
-        "chain_id": 8453,
-        "to": "0x1234567890123456789012345678901234567890",
-        "value": "10000000000000000",
-        "data": "0x"
-      },
-      "session_id": "123",
-      "request_id": "456",
-      "source": "model"
-    }
-  ]
-}
-```
-
-</ResponseExample>
-
 ## View Usage
 
-You can see how many tokens have been used through your integration by logging into thirdweb then **Select Project** \> **AI** \> **Analytics**. 
+You can see how many tokens have been used through your integration by logging into thirdweb then **Select Project** \> **AI** \> **Analytics**.

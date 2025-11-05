@@ -1,0 +1,35 @@
+---
+title: "Execute Transactions"
+description: "Learn how to execute transactions with thirdweb AI"
+---
+
+thirdweb AI supports two transaction modes: **Auto Execute** or **Prepare for Signing**
+
+- **Auto Execute**: The API will auto execute the transaction and requires wallet authentication.
+- **Prepare for Signing**: The API will only prepare the transaction for signing. The user will need to sign the transaction manually.
+
+<Tabs>
+  <Tab title="Auto Execute">
+    **Requirements:**
+
+    The context object must be set with:
+
+    - `from` set to the wallet address to execute the transaction from
+    - `auto_execute_transaction` set to `true`
+    - (Optional) `chain_ids` set to the chain IDs to execute the transaction on
+
+    The API must be called with either:
+
+    - your `x-secret-key` header for server wallet authentication
+    - OR a `Authorization` header with a valid wallet JWT for user wallet authentication
+  </Tab>
+  <Tab title="Prepare for Signing">
+    
+  </Tab>
+</Tabs>
+
+**Model behavior:**
+
+If all the requirements are met, the transaction will be executed automatically and the model will return a message with the transaction ID.
+
+It will also include an `actions` array with a `monitor_transaction` action. This action can be used to monitor the transaction status and get the transaction receipt via the thirdweb API.
