@@ -114,7 +114,7 @@
         "tab": "AI",
         "groups": [
           {
-            "group": "Blockchain LLM",
+            "group": "thirdweb AI",
             "expanded": false,
             "pages": [
               "/ai/blockchain-llm/quickstart",
