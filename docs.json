@@ -14,9 +14,33 @@
         "tab": "Wallets",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "User Wallets",
             "pages": [
-              "index"
+              "/wallets/user-wallets/quickstart",
+              "/wallets/user-wallets/auth-methods",
+              "/wallets/user-wallets/ui-components",
+              "/wallets/user-wallets/link-profiles"
+            ]
+          },
+          {
+            "group": "Ecosystem Wallets",
+            "pages": [
+              "/wallets/ecosystem-wallets/get-started",
+              "/wallets/ecosystem-wallets/wallet-connect"
+            ]
+          },
+          {
+            "group": "Sponsor Gas",
+            "pages": [
+              "/sponsor-gas/quickstart"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "/wallets/resources/wallet-types",
+              "/wallets/resources/security",
+              "/wallets/resources/faq"
             ]
           }
         ]
@@ -96,13 +120,8 @@
       "anchors": [
         {
           "anchor": "Playground",
-          "href": "https://mintlify.com/docs",
+          "href": "https://playground.thirdweb.com",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
@@ -115,7 +134,7 @@
     "links": [
       {
         "label": "Changelog",
-        "href": "https://blog.thirdweb.com/changelog"
+        "href": "https://thirdweb.com/changelog"
       },
       {
         "label": "Support",
@@ -131,20 +150,18 @@
   "contextual": {
     "options": [
       "copy",
-      "view",
       "chatgpt",
       "claude",
       "perplexity",
       "mcp",
-      "cursor",
-      "vscode"
+      "cursor"
     ]
   },
   "footer": {
     "socials": {
       "x": "https://x.com/thirdweb",
       "github": "https://github.com/thirdweb-dev",
-      "linkedin": "https://linkedin.com/company/thirdweb_"
+      "linkedin": "https://linkedin.com/company/third-web"
     }
   },
   "seo": {
