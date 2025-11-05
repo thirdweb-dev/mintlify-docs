@@ -116,6 +116,8 @@
             "group": "Blockchain LLM",
             "expanded": false,
             "pages": [
+              "/ai/blockchain-llm/quickstart",
+              "/ai/blockchain-llm/transaction-execution",
               "/ai/blockchain-llm/streamed-responses",
               {
                 "group": "Integrations",
