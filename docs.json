@@ -77,10 +77,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "API Reference",
-        "openapi": "https://api.thirdweb.com/openapi.json"
       }
     ],
     "global": {
