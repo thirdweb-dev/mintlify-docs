@@ -33,6 +33,7 @@
                   "/wallets/user-wallets/customization/custom-otp-email"
                 ]
               },
+              "/wallets/user-wallets/pregenerate-wallets",
               {
                 "group": "Adapters",
                 "pages": [
