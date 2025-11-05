@@ -7,8 +7,8 @@ The `@thirdweb-dev/ai-sdk-provider` package is a lightweight integration that en
 
 It provides standardized message handling, wallet-aware tools, and type-safe utilities that make it simple to build chat UIs capable of executing **on-chain actions** directly from AI responses.
 
-<Card title="New Card" href="https://ai-sdk.dev/docs/introduction" cta="Learn more about the Vercel AI SDK">
-  Vercel AI SDK is an open-source toolkit for building AI-powered applications with React and Next.js. It provides utilities like `useChat` and `useCompletion` to easily stream model responses, handle conversations, and integrate AI features into your app’s UI.
+<Card title="Vercel AI SDK" href="https://ai-sdk.dev/docs/introduction" cta="Learn more about the Vercel AI SDK">
+  Vercel AI SDK is an open-source toolkit for building AI-powered applications with React and Next.js. 
 </Card>
 
 If you're using the Vercel AI SDK (`ai` / `@ai-sdk/react`) and want your agent to request blockchain actions safely, this provider gives you:
@@ -17,7 +17,7 @@ If you're using the Vercel AI SDK (`ai` / `@ai-sdk/react`) and want your agent t
 - A message schema (`ThirdwebAiMessage`) compatible with `useChat` for typed tool results.
 - Ready-made thirdweb tools wired for transactions, swaps and monitoring.
 
-### Installation
+## Installation
 
 At the root of your directory, run the following:
 
@@ -25,10 +25,10 @@ At the root of your directory, run the following:
 pnpm add @thirdweb-dev/ai-sdk-provider ai @ai-sdk/react
 ```
 
-## Get Started
+## Configuration
 
 <Tabs>
-  <Tab title="Client-Side Integration">
+  <Tab title="Client-Side">
     Use `useChat<ThirdwebAiMessage>()` to get typed objects from `useChat()`. This will give you strongly typed tool results in your UI like `tool-sign_transaction`, `tool-sign_swap` or `tool-monitor_transaction`.
 
     ```javascript
@@ -70,7 +70,7 @@ pnpm add @thirdweb-dev/ai-sdk-provider ai @ai-sdk/react
     }
     ```
   </Tab>
-  <Tab title="Server-Side Integration">
+  <Tab title="Server-Side">
     Create a thirdweb ai provider instance and compatible with the Vercel AI SDK by calling `createThirdwebAI` with your project secret key.
 
     Then pass a `thirdwebAI.chat()` instance as the model for the `streamText` function and configure the model context with the `context` option.
@@ -117,7 +117,7 @@ pnpm add @thirdweb-dev/ai-sdk-provider ai @ai-sdk/react
 
 You can render **messages** and **reasoning steps** as usual using your own UI or the prebuilt **Vercel AI Elements**.
 
-When an on-chain action is requested, the model will return a tool part such as `tool-sign_transaction` or `tool-sign_swap`. 
+When an on-chain action is requested, the model will return a tool part such as `tool-sign_transaction` or `tool-sign_swap`.
 
 You can handle these tool parts in your UI as follows:
 
