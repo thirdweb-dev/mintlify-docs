@@ -1,0 +1,48 @@
+---
+title: "x402 Client-Side Integration"
+description: "Learn how to integrate x402 client-side to automatically handle payment flows"
+---
+
+Easily make requests to any x402-compatible backend while automatically managing the payment flow when APIs return a `402 Payment Required` response.
+
+The client library extends the native `fetch` API and takes care of:
+
+- Sending the initial API request
+- Detecting and handling `402 Payment Required` responses
+- Extracting payment requirements from the response
+- Creating and signing the payment authorization
+- Retrying the request with valid payment credentials
+
+<Tabs>
+  <Tab title="TypeScript">
+    The wrapFetchWithPayment function wraps the native fetch API to automatically handle 402 Payment Required responses.
+
+    ```javascript
+    import { wrapFetchWithPayment } from "thirdweb/x402";
+    import { createThirdwebClient } from "thirdweb";
+    import { createWallet } from "thirdweb/wallets";
+    
+    const client = createThirdwebClient({ clientId: "your-client-id" });
+    const wallet = createWallet("io.metamask"); // or any other wallet
+    await wallet.connect({ client });
+    
+    // Wrap fetch with payment handling
+    // maxValue is the maximum payment amount in base units (defaults to 1 USDC = 1_000_000)
+    const fetchWithPay = wrapFetchWithPayment(
+    fetch,
+    client,
+    wallet,
+    BigInt(1 * 10 ** 6), // max 1 USDC
+    );
+    
+    // Make a request that may require payment
+    const response = await fetchWithPay(
+    "https://api.example.com/paid-endpoint",
+    );
+    const data = await response.json()
+    ```
+  </Tab>
+  <Tab title="HTTP API">
+    
+  </Tab>
+</Tabs>

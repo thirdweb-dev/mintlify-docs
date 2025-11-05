@@ -50,9 +50,18 @@
         "tab": "x402",
         "groups": [
           {
+            "group": "Get Started",
+            "pages": [
+              "/x402/quickstart",
+              "/x402/client",
+              "/x402/server",
+              "/x402/facilitator"
+            ]
+          },
+          {
             "group": "Resources",
             "pages": [
-              "/bridge/resources/faq"
+              "/x402/resources/faq"
             ]
           }
         ]

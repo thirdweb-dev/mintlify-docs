@@ -11,4 +11,13 @@ sidebarTitle: "FAQ"
   <Accordion title="What is the difference between an ERC-721 and ERC-1155 token?">
     ERC-721 tokens represent unique, one-of-a-kind assets where each token has its own ID and metadata (like an NFT artwork). ERC-1155 tokens are more flexible, allowing both unique (non-fungible) and identical (fungible) assets to exist under one smart contract. This is ideal for gaming items or collections with multiple editions.
   </Accordion>
+  <Accordion title="How do I renounce ownership of my token contract?">
+    You can call the `renounceOwnership` function on your asset contract (e.g., via a block explorer).
+
+    - _Native token value to enter:_ `0`
+    - _Note:_ Renouncing ownership is irreversible and means you will no longer be able to update the contract or its metadata.
+  </Accordion>
+  <Accordion title="What are the implications of renouncing ownership?">
+    After renouncing ownership, you lose all admin privileges, including the ability to update token metadata or manage contract settings.
+  </Accordion>
 </AccordionGroup>
