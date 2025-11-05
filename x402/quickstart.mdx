@@ -1,0 +1,89 @@
+---
+title: "QuickStart"
+description: "Learn how to get started with x402 to create payable API endpoints"
+---
+
+x402 is an open-source protocol that turns the dormant HTTP 402 Payment Required status code into a fully-featured, on-chain payment layer for APIs, websites, and autonomous agents.
+
+<Tip>
+  Learn more about the x402 protocol at [x402.org](https://www.x402.org/)
+</Tip>
+
+thirdweb x402 offers integrations both on the client and server side depending on your use case.
+
+<Tabs>
+  <Tab title="Client Integration">
+    The `wrapFetchWithPayment` utility extends the native `fetch` API to automatically manage **402 Payment Required** responses from any **x402-compatible API**.
+
+    When a payment is required, this wrapper seamlessly handles the entire payment flow using the connected wallet, then retries the request once payment is complete.
+
+    ```javascript
+    
+    import { wrapFetchWithPayment } from "thirdweb/x402";
+    import { createThirdwebClient } from "thirdweb";
+    import { createWallet } from "thirdweb/wallets";
+    
+    const client = createThirdwebClient({ clientId: "your-client-id" });
+    const wallet = createWallet("io.metamask");
+    await wallet.connect({ client });
+    
+    const fetchWithPay = wrapFetchWithPayment(fetch, client, wallet);
+    
+    // Make a request that may require payment
+    const response = await fetchWithPay(
+      "https://api.example.com/paid-endpoint",
+    );
+    ```
+
+    This approach allows your frontend to interact with paid endpoints without needing custom payment-handling logic.
+
+    For more examples and configuration details, refer to the [Client-side Integration Guide](/x402/x402-client).
+  </Tab>
+  <Tab title="Server Integration">
+    To make your API endpoints payable, use the `settlePayment` function within your server route or middleware. This function verifies and settles incoming x402 payments before executing your business logic.
+
+    ```javascript
+    import { createThirdwebClient } from "thirdweb";
+    import { facilitator, settlePayment } from "thirdweb/x402";
+    import { arbitrumSepolia } from "thirdweb/chains";
+    
+    const client = createThirdwebClient({ secretKey: "your-secret-key" });
+    const thirdwebX402Facilitator = facilitator({
+      client,
+      serverWalletAddress: "0xYourWalletAddress",
+    });
+    
+    export async function GET(request: Request) {
+      const paymentData = request.headers.get("x-payment");
+    
+      const result = await settlePayment({
+        resourceUrl: "https://api.example.com/premium-content",
+        method: "GET",
+        paymentData,
+        payTo: "0xYourWalletAddress",
+        network: arbitrumSepolia,
+        price: "$0.01",
+        facilitator: thirdwebX402Facilitator,
+        routeConfig: {
+          description: "Access to premium API content",
+          mimeType: "application/json",
+          maxTimeoutSeconds: 300,
+        },
+      });
+    
+      if (result.status === 200) {
+        return Response.json({ data: "premium content" });
+      } else {
+        return Response.json(result.responseBody, {
+          status: result.status,
+          headers: result.responseHeaders,
+        });
+      }
+    }
+    ```
+
+    You can also abstract this logic into reusable middleware to handle payments across multiple endpoints. The configured **facilitator** is responsible for verifying and settling payments onchain using your server wallet. 
+
+    For more examples and configuration details, refer to the [Server-side Integration Guide](/x402/x402-server).
+  </Tab>
+</Tabs>
