@@ -63,23 +63,11 @@
         "tab": "AI",
         "groups": [
           {
-            "group": "Blockchain LLM",
+            "group": "Integrations",
+            "expanded": false,
             "pages": [
-              "/ai/blockchain-llm/get-started",
-              "/ai/blockchain-llm/transaction-execution",
-              "/ai/blockchain-llm/streamed-response"
-            ]
-          },
-          {
-            "group": "MCP-Server",
-            "pages": [
-              "/ai/mcp-server/get-started"
-            ]
-          },
-          {
-            "group": "Resources",
-            "pages": [
-              "/ai/resources/faq"
+              "/ai/blockchain-llm/integrations/open-ai-sdk",
+              "/ai/blockchain-llm/integrations/vercel-ai-sdk"
             ]
           }
         ]
