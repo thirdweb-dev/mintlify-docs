@@ -1,3 +1,37 @@
 ---
 title: "Add MCP Server to Cursor"
+description: "Learn how to add the thirdweb MCP Server to Cursor"
 ---
+
+You can interact with **thirdweb API** right inside Cursor’s environment- meaning you can:
+
+- Deploy contracts
+- Query balances
+- Run onchain transactions
+
+…and more all without needing to leave your dev environment or manually set up API requests.
+
+### Option 1: Direct Add
+
+Add the MCP Server directly with the following deep link:
+
+<Card title="New Card" icon="sparkles" href="cursor://anysphere.cursor-deeplink/mcp/install?name=thirdweb-api&config=eyJ1cmwiOiJodHRwczovL2FwaS50aGlyZHdlYi5jb20vbWNwP3NlY3JldEtleT1ZT1VSX1NFQ1JFVF9LRVlfSEVSRSJ9" cta="Install into Cursor">
+  
+</Card>
+
+### Option 2: Configure MCP
+
+Add the following to your `.cursor/mcp.json` file.\
+Replace `YOUR_SECRET_KEY_HERE` with your **thirdweb secret key**.
+
+```json
+{
+  "mcpServers": {
+    "thirdweb-api": {
+      "url": "https://api.thirdweb.com/mcp?secretKey=YOUR_SECRET_KEY_HERE"
+    }
+  }
+}
+```
+
+> **Note:** You can find your secret key in the [thirdweb dashboard](https://thirdweb.com/dashboard).
