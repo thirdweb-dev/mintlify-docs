@@ -136,10 +136,10 @@
               {
                 "group": "Clients",
                 "pages": [
-                  "/ai/mcp-server/clients/cursor",
-                  "/ai/mcp-server/clients/windsurf",
-                  "/ai/mcp-server/clients/vs-code",
-                  "/ai/mcp-server/clients/claude"
+                  "/ai/mcp-server/integrations/cursor",
+                  "/ai/mcp-server/integrations/windsurf",
+                  "/ai/mcp-server/integrations/vs-code",
+                  "/ai/mcp-server/integrations/claude"
                 ]
               }
             ]

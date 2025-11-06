@@ -47,3 +47,10 @@ The client library extends the native `fetch` API and takes care of:
     
   </Tab>
 </Tabs>
+
+### <u>Parameters</u>
+
+- `fetch` - The fetch function to wrap (typically `globalThis.fetch`)
+- `client` - The thirdweb client used to access RPC infrastructure
+- `wallet` - The wallet used to sign payment messages
+- `maxValue` - (Optional) The maximum allowed payment amount in base units (defaults to 1 USDC = 1,000,000)

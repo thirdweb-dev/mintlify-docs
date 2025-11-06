@@ -1,0 +1,23 @@
+---
+title: "x402 Agents"
+description: "Learn how to enable your AI agents to pay for any x402 compatible API calls"
+---
+
+## Option 1: MCP Server
+
+The easiest way to enable your agent to **pay for API calls** is by using the **remote MCP server** and supplying the desired tools to your agent.
+
+By default, the MCP server includes **all available tools**. You can limit which tools are exposed by passing a **comma-separated list** of tool names as a query parameter.
+
+In the example below, a **React agent** is created using **LangChain**, with the MCP tools filtered to only include `fetchWithPayment` and `listPayableServices`.
+
+<Info>
+  [View the full list](/ai/mcp-server/tool-reference) of available tools on the thirdweb MCP Server
+</Info>
+
+
+## Option 2: API
+
+You can also **create custom MCP tools**  or wrap external API calls with the `/v1/x402/fetchWithPayment` endpoint to automatically handle payment flows when an API returns a `402 Payment Required` response.
+
+Provide the target **URL** and **HTTP method** when calling the endpoint. By default, it uses your **project wallet** for payments. You can optionally specify a `from` wallet address, either a user wallet or a server wallet, to complete the transaction.

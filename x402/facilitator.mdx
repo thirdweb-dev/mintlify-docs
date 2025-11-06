@@ -1,5 +1,20 @@
 ---
 title: "Facilitator"
+description: "Learn about the thirdweb facilitator and how to implement it"
 ---
 
 The facilitator is a service that handles verifying and submitting x402 payments. It uses your own [server wallet](https://portal.thirdweb.com/wallets/server) and leverages EIP-7702 to submit transactions gaslessly.
+
+**How it works**:
+
+- **Verification** - Validates payment signatures and requirements
+- **Settlement** - Submits the payment transaction on-chain
+- **Gasless** - Uses [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) for gasless transactions
+- **Your Wallet** - Uses your own server wallet for receiving payments
+
+## **Chain and token support**
+
+thirdweb facilitator supports payments on any EVM chain, as long as the payment token supports either:
+
+- ERC-2612 permit (most ERC20 tokens)
+- ERC-3009 sign with authorization (USDC on all chains)
