@@ -127,7 +127,7 @@
                   "/ai/blockchain-llm/integrations/vercel-ai-sdk"
                 ]
               },
-              "https://api.thirdweb.com/openapi.json POST /ai/chat"
+              "/ai/blockchain-llm/post-ai-chat"
             ]
           },
           {
