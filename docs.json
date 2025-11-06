@@ -11,10 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "API Reference",
-        "openapi": "https://api.thirdweb.com/openapi.json"
-      },
-      {
         "tab": "Wallets",
         "groups": [
           {
@@ -155,6 +151,10 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "API Reference",
+        "openapi": "https://api.thirdweb.com/openapi.json"
       }
     ],
     "global": {
