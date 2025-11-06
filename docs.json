@@ -126,13 +126,15 @@
                   "/ai/blockchain-llm/integrations/open-ai-sdk",
                   "/ai/blockchain-llm/integrations/vercel-ai-sdk"
                 ]
-              }
+              },
+              "https://api.thirdweb.com/openapi.json POST /ai/chat"
             ]
           },
           {
             "group": "MCP Server",
             "pages": [
               "/ai/mcp-server/quickstart",
+              "https://api.thirdweb.com/openapi.json POST /mcp",
               {
                 "group": "Clients",
                 "pages": [
