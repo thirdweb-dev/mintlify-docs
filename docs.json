@@ -80,6 +80,7 @@
       {
         "tab": "Bridge",
         "groups": [
+          "/bridge/quickstart",
           {
             "group": "Resources",
             "pages": [
