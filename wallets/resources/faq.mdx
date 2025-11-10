@@ -7,6 +7,9 @@ sidebarTitle: "FAQs"
 ### General
 
 <AccordionGroup>
+  <Accordion title="Which blockchains are supported for Wallets?">
+    [View the full list](https://thirdweb.com/chainlist?service=connect-sdk) of supported chains for Wallets.
+  </Accordion>
   <Accordion title="How can I enable someone to login without an OTP email?">
     You can use custom authentication or OAuth to enable login options without an OTP email.
   </Accordion>
@@ -14,18 +17,26 @@ sidebarTitle: "FAQs"
     [Visit the playground](https://playground.thirdweb.com/wallets/sign-in/button) to view all supported authentication methods.\
     Wallets supports custom auth integrations for developers building their own authentication systems.
   </Accordion>
-  <Accordion title="New Accordion">
-    
+  <Accordion title="Do I need to build separate flows for user wallets and external wallets (e.g. MetaMask)?">
+    No, since our SDK provides the wallet signer, you can build a unified experience with the same code to handle how all your users' wallets interact with signatures and smart contracts.
+
+    However, you will need to provide a separate flow to create in-app wallets as you would with any wallet provider (WalletConnect, Coinbase Wallet, etc.).
   </Accordion>
 </AccordionGroup>
 
-### Security
+### Security & Recoverability
 
 <AccordionGroup>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="What happens if thirdweb ceases to exist? Will my users be able to access their wallets?">
+    In the event that thirdweb ceases to exist, we have committed to keeping our user wallet service running for a period of at least 12 months after the shutdown announcement. During this time users will be able to access their wallet and transfer their assets out, or export their private key which they can then import into a different client.
   </Accordion>
-  <Accordion title="New Accordion" icon="sparkles">
+  <Accordion title="How will my users recover their accounts in case they lose access to their auth?">
+    Users can also link their account to a different auth method (e.g. email, phone, or social). All linked methods will be able to be used to access their accounts, providing an alternate recovery method in the case where one is lost.
+  </Accordion>
+  <Accordion title="How is the private key managed?">
+    Learn more about the architecture of how thirdweb wallets are created and stored [in the security docs.](/wallets/resources/security).
+  </Accordion>
+  <Accordion title="New Accordion">
     
   </Accordion>
 </AccordionGroup>
