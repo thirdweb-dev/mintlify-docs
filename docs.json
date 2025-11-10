@@ -120,7 +120,6 @@
               "/ai/blockchain-llm/quickstart",
               "/ai/blockchain-llm/execute-transactions",
               "/ai/blockchain-llm/streamed-responses",
-              "/ai/blockchain-llm/post-ai-chat",
               {
                 "group": "Integrations",
                 "pages": [

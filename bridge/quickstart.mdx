@@ -1,0 +1,73 @@
+---
+title: "QuickStart"
+description: "Learn how to easily bridge and swap tokens between chains and wallets using Bridge"
+---
+
+<Steps>
+  <Step title="Install SDK">
+    Install the thirdweb SDK
+
+    <Tabs>
+      <Tab title="npm">
+        ```
+        npm i thirdweb
+        ```
+      </Tab>
+      <Tab title="yarn">
+        ```
+        yarn add thirdweb
+        ```
+      </Tab>
+      <Tab title="pnpm">
+        ```
+        pnpm i thirdweb
+        ```
+      </Tab>
+      <Tab title="bun">
+        ```
+        bun i thirdweb
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Create Client">
+    Create a client file for reuse throughout your app:
+
+    ```javascript thirdwebClient.ts
+    import { createThirdwebClient } from "thirdweb";
+    
+    export const client = createThirdwebClient({
+      clientId: "YOUR_CLIENT_ID", // Get from your thirdweb dashboard
+    });
+    
+    ```
+  </Step>
+  <Step title="Setup Provider">
+    Wrap your application with the `ThirdwebProvider`
+
+    ```javascript
+    // app.tsx / _app.tsx
+    import { ThirdwebProvider } from "thirdweb/react";
+    
+    function App() {
+      return (
+        <ThirdwebProvider>
+          <YourApp />
+        </ThirdwebProvider>
+      );
+    }
+    
+    ```
+  </Step>
+  <Step title="Add Swap Widget">
+    Use the SwapWidget to let users swap tokens
+
+    ```javascript
+    import { SwapWidget } from "thirdweb/react";
+    
+    function Example() {
+      return <SwapWidget client={client} />;
+    }
+    ```
+  </Step>
+</Steps>

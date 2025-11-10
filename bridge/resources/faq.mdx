@@ -7,49 +7,97 @@ sidebarTitle: "FAQs"
 ### General
 
 <AccordionGroup>
-  <Accordion title="New Accordion">
-    
+  <Accordion title="What does Bridge use to operate under the hood?">
+    Bridge is an asset router that combines thirdweb's own onchain infrastructure with existing bridging and swapping protocols to find the optimal route for any given transaction. This can include intents, native bridges, third party bridges, cross-chain messaging protocols, thirdweb's custom bridges, and more. All routes are monitored and planned continuously for health, price, and speed to guarantee the best path every time.
   </Accordion>
-  <Accordion title="New Accordion">
-    
-  </Accordion>
-  <Accordion title="New Accordion">
-    
-  </Accordion>
-  <Accordion title="New Accordion">
-    
+  <Accordion title="Am I able to use Bridge with other wallet infrastructure providers?">
+    Yes, Bridge is designed to be agnostic to wallet infrastructure. You can use it with any wallet service.
   </Accordion>
 </AccordionGroup>
 
 ### Fees
 
 <AccordionGroup>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="What are the fees for onramping?">
+    Fees for onramping are based on the onramp provider. [Learn more about fees](/bridge/resources/fee-breakdown).\
+    \
+    thirdwbe does not determine nor take a cut from onramp provider fees
   </Accordion>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="What are the fees for crypto-to-crypto transactions?">
+    For buying with crypto or swap fees, thirdweb charges a 0.3% protocol fee. Developers may monetize their application by charging additional fees on swap transactions. To set a fee in your project page, navigate to Bridge \> Configuration to set the fee.
+  </Accordion>
+  <Accordion title="What are network fees?">
+    Network fees, also referred to as miner fees, are paid to the miner for processing crypto transactions and securing the respective network. These fees do not go to thirdweb.
+  </Accordion>
+  <Accordion title="Does thirdweb offer fiat payouts?">
+    Fiat payouts are not currently available.
   </Accordion>
 </AccordionGroup>
 
 ### Token & Region Support
 
 <AccordionGroup>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="How can I support a token?">
+    We're able to support most tokens that meet the following criteria:
+
+    - The token must have sufficient liquidity
+    - The token must be on a supported chain. To request support for a token, please visit the Bridge tab in your project dashboard \> Settings \> "Don't see your token listed?" component and fill out the chain and token address information.
+
+    The service will automatically kick off the token route discovery process. Please check back the modal after 20-40 minutes for the requested token.
   </Accordion>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="What countries are supported through onramp?">
+    Buy With Fiat is available 160+ countries. The following countries are UNSUPPORTED:
+
+    - Afghanistan
+    - Africa (All Countries)
+    - Belarus
+    - Bolivia
+    - China
+    - Cuba
+    - Colombia
+    - Haiti
+    - Honduras
+    - Iran
+    - Iraq
+    - Latvia
+    - Lebanon
+    - Myanmar
+    - Pakistan
+    - Qatar
+    - Russia
+    - Ukraine
+    - United Arab Emirates
+    - Venezuela
+    - Yemen
+
+    All United States are supported, excluding Hawaii.
+  </Accordion>
+  <Accordion title="Which cryptocurrencies and tokens are supported?">
+    [View the full list](https://thirdweb.com/tokens) of supported tokens on Bridge.
+  </Accordion>
+  <Accordion title="Does Bridge support Apple Pay or Google Pay?">
+    Apple Pay and Google Pay are supported through the onramp providers depending on region. Coinbase, Stripe, and Transak currently support Apple Pay. Transak supports Google Pay.
+  </Accordion>
+  <Accordion title="What are the transaction limits for onramp?">
+    We currently require a \$1 minimum purchase for both stablecoin and non-stablecoin purchases through onramp.
+
+    Our transaction maximum starts from $1500 per week for new users and can increase over time to $10,000 per week.
+  </Accordion>
+  <Accordion title="Does thirdweb offer direct onramping to tokens through ?">
+    We currently require a \$1 minimum purchase for both stablecoin and non-stablecoin purchases through Buy With Fiat. Our transaction maximum starts from $1500 per week for new users and can increase over time to $10,000 per week.
+  </Accordion>
+  <Accordion title="How are prices set through thirdweb Bridge?">
+    Prices are set depending on the liquidity provider used to route your transaction.
   </Accordion>
 </AccordionGroup>
 
 ### KYC & Compliance
 
 <AccordionGroup>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="What are the KYC requirements?">
+    Onramp options all require minimal KYC. This is done to comply with local regulations and to ensure the safety of our users. Please note: onramping with Coinbase does not require KYC for a purchase below \$500 with debit card.
   </Accordion>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="How does KYC work for buying cryptocurrency with Fiat?">
+    Users will be required to complete KYC verification for their first purchase using 'Buy with Fiat.' After that, no further KYC will be needed for future purchases on the same platform.
   </Accordion>
 </AccordionGroup>
