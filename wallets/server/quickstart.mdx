@@ -1,6 +1,53 @@
 ---
-title: "QuickStart"
-description: "Learn how to get started with Server Wallets"
+title: "Server Wallets"
+description: "Backend wallets for sending transactions"
 ---
 
-Server wallets are wallets that are managed by your own application, like a treasury wallet or admin wallet. They are used to send transactions from your backend.
+Server wallets are wallets managed by your backend. Use them for admin actions, treasury management, or any transaction that originates from your server instead of your users.
+
+## What are they?
+
+Server wallets are non-custodial wallets that live on your backend. You control them completely—use them for:
+
+- **Treasury wallets** - Hold and manage your project's funds
+- **Admin wallets** - Execute privileged contract operations
+- **Automation** - Send transactions programmatically
+
+## How it works
+
+### 1. Create a server wallet
+
+Create server wallets via the API by passing an identifier (any string, but use a descriptive name like "treasury-wallet" or "admin-wallet").
+
+You'll get back a wallet address. Save it—you'll use it to send transactions.
+
+### 2. Send transactions
+
+All transactions go through the API. Specify your server wallet address as the `from` field, and thirdweb handles signing and sending.
+
+You can:
+
+- **Send native tokens** (ETH, MATIC, etc.)
+- **Interact with smart contracts** (mint NFTs, transfer tokens, call any function)
+- **Batch transactions** together
+- **Monitor transaction status** via API or webhooks
+
+### 3. Manage wallets
+
+List all your server wallets to see their addresses and identifiers. Create new ones as needed for different purposes (treasury, admin, automation, etc.).
+
+## Common use cases
+
+- **NFT minting** - Mint NFTs to users from your backend
+- **Airdrops** - Distribute tokens programmatically
+- **Contract administration** - Update contract settings, pause/unpause
+- **Automated trading** - Execute trades based on bot logic
+- **Reward distribution** - Send rewards based on user actions
+
+## Security
+
+Server wallets are managed by thirdweb's secure infrastructure. Your secret key controls access—keep it safe and never expose it client-side.
+
+Each wallet is fully non-custodial. thirdweb handles the infrastructure but you maintain full control via your API keys.
+
+Check the API Reference tab for endpoint details and request/response formats.

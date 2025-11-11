@@ -1,0 +1,49 @@
+---
+title: "External Wallets"
+description: "Connect MetaMask, Rainbow, and 500+ wallets"
+---
+
+External wallets let users connect with wallets they already own—MetaMask, Rainbow, Coinbase Wallet, and 500+ others.
+
+## What are they?
+
+Instead of creating a new wallet for users, you let them connect their existing browser extension or mobile wallet. thirdweb supports all EIP-6963 compatible wallets plus native integrations for popular wallets.
+
+## When to use external wallets
+
+Use external wallets when:
+
+- Your users are crypto-native and already have wallets
+- You want to give users the choice to bring their own wallet
+- You need to support hardware wallets or specific wallet apps
+
+For mainstream users who don't have wallets yet, use [user wallets](/wallets/user) instead.
+
+## Supported wallets
+
+thirdweb supports 500+ wallets including:
+
+- **MetaMask**
+- **Coinbase Wallet**
+- **Rainbow**
+- **Trust Wallet**
+- **WalletConnect** - connects to 400+ mobile wallets
+- **All EIP-6963 compatible wallets** - automatic detection
+
+## How it works
+
+When you add external wallet support:
+
+1. thirdweb detects which wallets are installed in the user's browser
+2. User selects their wallet from the available options
+3. They approve the connection in their wallet app
+4. Your app can now send transactions that the user signs in their wallet
+
+## Mix and match
+
+You can offer both embedded user wallets and external wallets at the same time. This gives users flexibility:
+
+- Crypto beginners can use embedded wallets (no setup required)
+- Crypto-native users can connect their existing wallets
+
+Check the API Reference tab for implementation details.

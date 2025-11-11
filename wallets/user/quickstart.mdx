@@ -1,10 +1,41 @@
 ---
-title: "QuickStart"
-description: "Learn how to get started with User Wallets"
+title: "User Wallets"
+description: "Embedded in-app wallets for your users"
 ---
 
-User Wallets are the wallets you attach to user authentication.
+User wallets are embedded in-app wallets that live inside your application. Each user gets their own non-custodial wallet automatically—no seed phrases, no browser extensions.
 
-thirdweb supports various authentication methods by default: social logins, email, SMS, passkeys, and more. For every user, thirdweb generates a non-custodial wallet behind the scenes.
+## What are they?
 
-You can even bring your own authentication and provision a wallet based on your own user IDs.
+When a user logs into your app, thirdweb creates a wallet for them behind the scenes. The user doesn't need to download anything or manage private keys. It just works.
+
+## How it works
+
+1. **User authenticates** - They log in using one of the supported auth methods
+2. **Wallet gets created** - thirdweb generates a wallet tied to their identity
+3. **User transacts** - The wallet can now send transactions, sign messages, interact with contracts
+
+## Auth methods
+
+- **Social logins** - Google, Apple, Facebook, Discord, etc.
+- **Email or SMS** - Passwordless verification
+- **Passkeys** - Biometric authentication
+- **Bring your own auth** - Connect wallets to your existing user system
+
+## What can users do?
+
+Once they have a wallet, users can:
+
+- Send and receive tokens
+- Interact with smart contracts
+- Sign messages
+- Use the wallet across any chain you support
+
+All transactions still require the user's signature—thirdweb never has custody of their assets.
+
+## Next steps
+
+- **[Ecosystem Wallets](/wallets/ecosystem)** - Unlock advanced features like cross-app wallets and partner integrations
+- **[External Wallets](/wallets/external)** - Let users connect their existing wallets (MetaMask, Rainbow, etc.)
+
+Check the API Reference tab for implementation details.

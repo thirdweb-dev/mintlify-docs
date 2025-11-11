@@ -14,15 +14,18 @@
         "tab": "Wallets",
         "groups": [
           {
-            "group": "User Wallets",
+            "group": "Get Started",
             "pages": [
-              "/wallets/user/quickstart"
+              "/wallets/user/quickstart",
+              "/wallets/ecosystem",
+              "/wallets/external",
+              "/wallets/server/quickstart"
             ]
           },
           {
-            "group": "Server Wallets",
+            "group": "Sponsor Gas",
             "pages": [
-              "/wallets/server/quickstart"
+              "/wallets/gas-sponsorship"
             ]
           },
           {

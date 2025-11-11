@@ -1,0 +1,67 @@
+---
+title: "Overview"
+description: "Pay gas fees for your users"
+---
+
+Gas sponsorship lets you pay transaction fees for your users. They sign transactions with zero friction—no need to hold native tokens for gas.
+
+## What is it?
+
+Normally, users need ETH (or the native token) to pay gas fees. With gas sponsorship, you cover those costs. Users can interact with your contracts without worrying about gas.
+
+Perfect for onboarding new users who don't own crypto yet.
+
+## How it works
+
+Gas sponsorship uses smart account technology:
+
+- **EIP-7702** (recommended) - Simpler, works with regular wallets
+- **ERC-4337** - Account abstraction standard
+
+Both methods let you sponsor gas fees. Enable it when creating user wallets, and transactions from those wallets get sponsored automatically.
+
+The user still signs each transaction—you just pay the gas fee.
+
+## What gets sponsored?
+
+You can sponsor:
+
+- **Contract interactions** - Minting NFTs, claiming tokens, game actions
+- **Token transfers** - Sending ERC-20 tokens
+- **Any on-chain transaction** - As long as it originates from a sponsored wallet
+
+## Control your spending
+
+Configure sponsorship rules from your thirdweb dashboard:
+
+### Scope rules
+
+- **Specific contracts** - Only sponsor your own contracts
+- **Specific functions** - Only sponsor certain operations (like `mint` but not `transfer`)
+- **Specific chains** - Sponsor on Polygon but not Ethereum
+
+### Budget limits
+
+- **Per user** - Cap gas spending per wallet
+- **Per day/month** - Set overall spending limits
+- **Alert thresholds** - Get notified when approaching limits
+
+## Common use cases
+
+- **Onboarding** - New users don't need to buy crypto to get started
+- **Gaming** - Players focus on gameplay, not managing gas
+- **Social apps** - Users post, like, share without friction
+- **NFT minting** - Let users mint without needing ETH first
+- **Loyalty programs** - Reward users without them paying gas to claim
+
+## Cost considerations
+
+Gas sponsorship costs you real money—you're paying network fees. Start with:
+
+1. Restrictive rules (specific contracts and functions only)
+2. Low per-user limits
+3. Test on cheaper networks first (Base, Polygon)
+
+Monitor spending in your dashboard and adjust rules as needed.
+
+Check the API Reference tab for implementation details.

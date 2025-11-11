@@ -1,0 +1,64 @@
+---
+title: "Ecosystem Wallets"
+description: "Cross-app wallets with centralized management"
+---
+
+Ecosystem wallets are user wallets with additional functionality unlocked. Same tech, more features.
+
+## What makes them different?
+
+Ecosystem wallets are built on the same technology as regular user wallets, but they let you:
+
+- **Share wallets across apps** - Users keep the same wallet across your entire ecosystem of apps and games
+- **Partner integrations** - Let approved partners integrate your wallet into their apps
+- **Centralized management** - Control permissions, gas sponsorship, and branding from one dashboard
+
+Think of it as upgrading from a single-app wallet to a multi-app wallet system.
+
+## When to use ecosystem wallets
+
+Use ecosystem wallets if you:
+
+- Have multiple apps or games where users should share the same wallet
+- Want to let partners integrate your branded wallet
+- Need centralized control over your entire wallet ecosystem
+
+If you just need wallets for a single app, stick with regular [user wallets](/wallets/user).
+
+## How to set up
+
+### 1. Create your ecosystem
+
+Visit the [Ecosystem Wallets dashboard](https://thirdweb.com/team/~/~/ecosystem/create) and name your ecosystem. This name is permanent and appears wherever your wallet shows up.
+
+You'll get an **Ecosystem ID** - save this, you'll need it for integration.
+
+### 2. Set permissions
+
+Choose who can use your ecosystem wallet:
+
+**Anyone** - Open to all apps (you can blocklist bad actors)  
+**Allowlist** - Restrict to approved partners only
+
+For allowlist mode, add each app with:
+
+- App name
+- Allowed domains
+- Bundle ID (for mobile apps)
+
+Each approved app gets a **Partner ID**.
+
+### 3. Integrate and use
+
+Reference your Ecosystem ID in your integration. For allowlist mode, also include your Partner ID.
+
+All the same auth methods from user wallets work here—the wallet just has additional cross-app capabilities enabled.
+
+## What you can do
+
+- **Cross-app authentication** - User logs in once, works everywhere
+- **Shared wallet balance** - Same wallet address across all your apps
+- **Partner management** - Add/remove apps from your dashboard
+- **Gas sponsorship** - Sponsor transactions for your entire ecosystem
+
+Check the API Reference tab for implementation details.
