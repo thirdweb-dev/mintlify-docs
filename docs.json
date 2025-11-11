@@ -16,43 +16,13 @@
           {
             "group": "User Wallets",
             "pages": [
-              "/wallets/user-wallets/quickstart",
-              "/wallets/user-wallets/ui-components",
-              {
-                "group": "Authentication",
-                "pages": [
-                  "/wallets/user-wallets/auth-methods",
-                  "/wallets/user-wallets/link-profiles",
-                  "/wallets/user-wallets/sign-in-with-ethereum",
-                  "/wallets/user-wallets/custom-auth"
-                ]
-              },
-              {
-                "group": "Customization",
-                "pages": [
-                  "/wallets/user-wallets/customization/custom-otp-email"
-                ]
-              },
-              "/wallets/user-wallets/pregenerate-wallets",
-              {
-                "group": "Adapters",
-                "pages": [
-                  "/wallets/user-wallets/adapters"
-                ]
-              }
+              "/wallets/user/quickstart"
             ]
           },
           {
-            "group": "Ecosystem Wallets",
+            "group": "Server Wallets",
             "pages": [
-              "/wallets/ecosystem-wallets/get-started",
-              "/wallets/ecosystem-wallets/reown"
-            ]
-          },
-          {
-            "group": "Sponsor Gas",
-            "pages": [
-              "/sponsor-gas/quickstart"
+              "/wallets/server/quickstart"
             ]
           },
           {
